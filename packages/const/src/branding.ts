@@ -15,6 +15,15 @@ export const BRANDING_URL = {
   terms: undefined,
 };
 
-export const SOCIAL_URL = {};
+export const SOCIAL_URL = {
+  discord: '',
+  github: '',
+  medium: '',
+  x: '',
+  youtube: '',
+};
 
-export const BRANDING_EMAIL = {};
+export const BRANDING_EMAIL = {
+  support: '',
+  hello: '',
+};
