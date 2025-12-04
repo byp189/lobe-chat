@@ -7,6 +7,6 @@ export const CURRENT_VERSION = pkg.version;
 export const isDesktop = process.env.NEXT_PUBLIC_IS_DESKTOP_APP === '1';
 
 // @ts-ignore
-export const isCustomBranding = BRANDING_NAME = false;
+export const isCustomBranding = false;
 // @ts-ignore
-export const isCustomORG = ORG_NAME !== 'LobeHub';
+export const isCustomORG = false;
