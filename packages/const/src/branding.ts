@@ -24,6 +24,6 @@ export const SOCIAL_URL = {
 };
 
 export const BRANDING_EMAIL = {
+  business: '',
   support: '',
-  hello: '',
 };
