@@ -7,46 +7,54 @@ const isDev = process.env.NODE_ENV === 'development';
 
 export const UTM_SOURCE = 'chat_preview';
 
-export const OFFICIAL_URL = 'https://lobechat.com';
-export const OFFICIAL_SITE = 'https://lobehub.com';
-export const OFFICIAL_DOMAIN = 'lobehub.com';
+// ------------------- 自定义品牌 -------------------------
+export const OFFICIAL_URL = '';
+export const OFFICIAL_SITE = '';
+export const OFFICIAL_DOMAIN = '';
 
+// OG 图（可以保留）
 export const OG_URL = '/og/cover.png?v=1';
 
-export const GITHUB = 'https://github.com/lobehub/lobe-chat';
-export const GITHUB_ISSUES = urlJoin(GITHUB, 'issues/new/choose');
-export const CHANGELOG = 'https://lobehub.com/changelog';
+// ------------------- GitHub 相关（全部禁用） -------------------------
+export const GITHUB = '';
+export const GITHUB_ISSUES = '';
+export const CHANGELOG = '';
 
-export const DOCUMENTS = urlJoin(OFFICIAL_SITE, '/docs');
-export const USAGE_DOCUMENTS = urlJoin(DOCUMENTS, '/usage');
-export const SELF_HOSTING_DOCUMENTS = urlJoin(DOCUMENTS, '/self-hosting');
-export const DATABASE_SELF_HOSTING_URL = urlJoin(SELF_HOSTING_DOCUMENTS, '/server-database');
+// ------------------- 文档（全部禁用） -------------------------
+export const DOCUMENTS = '';
+export const USAGE_DOCUMENTS = '';
+export const SELF_HOSTING_DOCUMENTS = '';
+export const DATABASE_SELF_HOSTING_URL = '';
 
-// use this for the link
-export const DOCUMENTS_REFER_URL = `${DOCUMENTS}?utm_source=${UTM_SOURCE}`;
+export const DOCUMENTS_REFER_URL = '';
 
-export const WIKI_PLUGIN_GUIDE = urlJoin(USAGE_DOCUMENTS, '/plugins/development');
-export const MANUAL_UPGRADE_URL = urlJoin(SELF_HOSTING_DOCUMENTS, '/advanced/upstream-sync');
+// 插件开发文档
+export const WIKI_PLUGIN_GUIDE = '';
+export const MANUAL_UPGRADE_URL = '';
 
-export const BLOG = urlJoin(OFFICIAL_SITE, 'blog');
+// Blog
+export const BLOG = '';
 
-export const ABOUT = OFFICIAL_SITE;
-export const FEEDBACK = 'https://github.com/lobehub/lobe-chat/issues/new/choose';
-export const PRIVACY_URL = urlJoin(OFFICIAL_SITE, '/privacy');
-export const TERMS_URL = urlJoin(OFFICIAL_SITE, '/terms');
+// About / Feedback
+export const ABOUT = '';
+export const FEEDBACK = '';
 
+// 隐私 / 条款
+export const PRIVACY_URL = '';
+export const TERMS_URL = '';
+
+// 插件市场（如果你要禁用，改成空）
 export const PLUGINS_INDEX_URL = 'https://chat-plugins.lobehub.com';
 
-export const MORE_MODEL_PROVIDER_REQUEST_URL =
-  'https://github.com/lobehub/lobe-chat/discussions/6157';
+export const MORE_MODEL_PROVIDER_REQUEST_URL = '';
+export const MORE_FILE_PREVIEW_REQUEST_URL = '';
 
-export const MORE_FILE_PREVIEW_REQUEST_URL =
-  'https://github.com/lobehub/lobe-chat/discussions/3684';
-
+// Agents
 export const AGENTS_INDEX_GITHUB = 'https://github.com/lobehub/lobe-chat-agents';
 export const AGENTS_INDEX_GITHUB_ISSUE = urlJoin(AGENTS_INDEX_GITHUB, 'issues/new');
 export const AGENTS_OFFICIAL_URL = 'https://lobehub.com/agent';
 
+// Chat 页面
 export const SESSION_CHAT_URL = (id: string = INBOX_SESSION_ID, mobile?: boolean) =>
   qs.stringifyUrl({
     query: mobile ? { session: id, showMobileWorkspace: mobile } : { session: id },
@@ -57,11 +65,16 @@ export const imageUrl = (filename: string) => `/images/${filename}`;
 
 export const LOBE_URL_IMPORT_NAME = 'settings';
 
-export const RELEASES_URL = urlJoin(GITHUB, 'releases');
+export const RELEASES_URL = '';
 
-export const mailTo = (email: string) => `mailto:${email}`;
+export const mailTo = (email: string) => '';
 
-export const AES_GCM_URL = 'https://datatracker.ietf.org/doc/html/draft-ietf-avt-srtp-aes-gcm-01';
-export const BASE_PROVIDER_DOC_URL = 'https://lobehub.com/docs/usage/providers';
+// 加密文档 / Providers
+export const AES_GCM_URL = '';
+export const BASE_PROVIDER_DOC_URL = '';
+
+// sitemap
 export const SITEMAP_BASE_URL = isDev ? '/sitemap.xml/' : 'sitemap';
-export const CHANGELOG_URL = urlJoin(OFFICIAL_SITE, 'changelog/versions');
+
+// Changelog
+export const CHANGELOG_URL = '';
