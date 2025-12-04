@@ -48,6 +48,6 @@ export default {
   },
   welcome: {
     description: 'ABEI专用AI',
-    title: 'ABEI专用AI
+    title: 'ABEI专用AI'
   },
 };
