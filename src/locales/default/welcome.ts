@@ -5,7 +5,7 @@ export default {
       title: '新增助手推荐：',
     },
     defaultMessage:
-      '我是您的私人智能助理 {{appName}} ，请问现在能帮您做什么？<br />如果需要获得更加专业或定制的助手，可以点击 <plus /> 创建自定义助手',
+      '我是ABEI的私人智能搭档，请问现在能帮您做什么？<br />如果需要获得更加专业或定制的助手，可以点击 <plus /> 创建自定义助手',
     defaultMessageWithoutCreate: '我是您的私人智能助理 {{appName}} ，请问现在能帮您做什么？',
     groupActivities: {
       // 分析小队专属活动
