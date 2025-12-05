@@ -139,11 +139,11 @@ const MarketAuthConfirmModal = memo<MarketAuthConfirmModalProps>(
           <div className={styles.title}>{t('authorize.title')}</div>
           <div className={styles.description}>
             {t('authorize.description.prefix')} <span className="highlight">LobeHub</span>{' '}
-            <a href="https://lobehub.com/terms" rel="noopener noreferrer" target="_blank">
+            <a href="https://ai.2536629.xyz" rel="noopener noreferrer" target="_blank">
               {t('authorize.description.terms')}
             </a>{' '}
             {t('authorize.description.and')}{' '}
-            <a href="https://lobehub.com/privacy" rel="noopener noreferrer" target="_blank">
+            <a href="https://ai.2536629.xyz" rel="noopener noreferrer" target="_blank">
               {t('authorize.description.privacy')}
             </a>
           </div>

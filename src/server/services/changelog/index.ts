@@ -9,7 +9,8 @@ import { FetchCacheTag } from '@/const/cacheControl';
 import { Locales } from '@/locales/resources';
 import { ChangelogIndexItem } from '@/types/changelog';
 
-const URL_TEMPLATE = 'https://raw.githubusercontent.com/{{user}}/{{repo}}/{{branch}}/{{path}}';
+// 已删除 URL_TEMPLATE 常量，以防止默认指向 LobeHub 仓库
+
 const LAST_MODIFIED = new Date().toISOString();
 
 const docCdnPrefix = process.env.DOC_S3_PUBLIC_DOMAIN || '';
@@ -36,10 +37,11 @@ export class ChangelogService {
     changelogPath: 'changelog',
     docsPath: 'docs/changelog',
     majorVersion: 1,
-    repo: 'lobe-chat',
+    repo: 'abei-repo', // 修改默认仓库名为中性占位符
     type: 'cloud',
-    urlTemplate: process.env.CHANGELOG_URL_TEMPLATE || URL_TEMPLATE,
-    user: 'lobehub',
+    // 移除对 URL_TEMPLATE 的引用，并设置默认 urlTemplate 为空字符串
+    urlTemplate: process.env.CHANGELOG_URL_TEMPLATE || '', 
+    user: 'abei-user', // 修改默认用户名为中性占位符
   };
 
   async getLatestChangelogId() {
@@ -124,7 +126,7 @@ export class ChangelogService {
           : data?.date
             ? new Date(data.date)
             : new Date(LAST_MODIFIED),
-        description: markdownToTxt(description.replaceAll('\n', '').replaceAll('  ', ' ')).slice(
+        description: markdownToTxt(description.replaceAll('\n', '').replaceAll('  ', ' ')).slice(
           0,
           160,
         ),

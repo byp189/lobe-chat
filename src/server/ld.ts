@@ -24,17 +24,17 @@ export const AUTHOR_LIST = {
     name: 'CanisMinor',
     url: 'https://github.com/canisminor1990',
   },
-  lobehub: {
-    avatar: 'https://avatars.githubusercontent.com/u/131470832?v=4',
-    desc: 'Official Account',
-    name: 'LobeHub',
-    url: 'https://github.com/lobehub',
+  AI: {
+    avatar: 'https://gcore.jsdelivr.net/gh/byp189/djt@master/assets/tb.png',
+    desc: '专用部署',
+    name: 'AI',
+    url: 'https://ai.2536629.xyz',
   },
 };
 
 export class Ld {
   generate({
-    image = '/og/cover.png',
+    image = '',
     article,
     url,
     title,
@@ -87,7 +87,7 @@ export class Ld {
     return {
       '@id': this.getId(OFFICIAL_URL, '#organization'),
       '@type': 'Organization',
-      'alternateName': 'LobeHub',
+      'alternateName': 'AI',
       'contactPoint': {
         '@type': 'ContactPoint',
         'contactType': 'customer support',
@@ -97,15 +97,14 @@ export class Ld {
         'We are a group of e/acc design-engineers, hoping to provide modern design components and tools for AIGC, and creating a technology-driven forum, fostering knowledge interaction and the exchange of ideas that may culminate in mutual inspiration and collaborative innovation.',
       'email': BRANDING_EMAIL.business,
       'founders': [this.getAuthors(['arvinxx']), this.getAuthors(['canisminor'])],
-      'image': urlJoin(OFFICIAL_SITE, '/icon-512x512.png'),
+      'image': urlJoin(OFFICIAL_SITE, '/356.png'),
       'logo': {
         '@type': 'ImageObject',
         'height': 512,
-        'url': urlJoin(OFFICIAL_SITE, '/icon-512x512.png'),
+        'url': urlJoin(OFFICIAL_SITE, '/356.png'),
         'width': 512,
       },
-      'name': 'LobeHub',
-      'sameAs': [SOCIAL_URL.x, SOCIAL_URL.github, SOCIAL_URL.medium, SOCIAL_URL.youtube],
+      'name': 'AI',
       'url': OFFICIAL_SITE,
     };
   }
@@ -116,8 +115,8 @@ export class Ld {
       '@type': 'Organization',
     };
     if (!ids || ids.length === 0) return defaultAuthor;
-    if (ids.length === 1 && ids[0] === 'lobehub') return defaultAuthor;
-    const personId = ids.find((id) => id !== 'lobehub');
+    if (ids.length === 1 && ids[0] === 'AI') return defaultAuthor;
+    const personId = ids.find((id) => id !== 'AI');
     if (!personId) return defaultAuthor;
     const person = (AUTHOR_LIST as any)?.[personId];
     if (!person) return defaultAuthor;
@@ -255,7 +254,7 @@ export class Ld {
         '@id': this.getId(fixedUrl, '#primaryimage'),
       },
       'inLanguage': locale,
-      'keywords': tags?.join(' ') || 'LobeHub LobeChat',
+      'keywords': tags?.join(' ') || 'AI AI',
       'mainEntityOfPage': fixedUrl,
       'name': title,
       'publisher': {
