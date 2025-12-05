@@ -13,8 +13,8 @@ import type { FlexboxProps } from 'react-layout-kit'; // 保留类型定义
 // 💡 将组件参数重命名为以下划线开头（如 _style, _rest），可以避免 ESLint 的未使用变量错误。
 // 但是，最干净的做法是根本不解构它们。
 const BrandWatermark = memo<Omit<FlexboxProps, 'children'>>(() => {
-  
-  return null; // 阻止组件渲染任何内容
+
+return null; // 阻止组件渲染任何内容
 });
 
 export default BrandWatermark;
