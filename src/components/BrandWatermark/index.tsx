@@ -21,32 +21,11 @@ const useStyles = createStyles(({ token, css }) => ({
   `,
 }));
 
+// 组件修改：直接返回 null，阻止渲染任何内容
 const BrandWatermark = memo<Omit<FlexboxProps, 'children'>>(({ style, ...rest }) => {
-  const { styles, theme } = useStyles();
-  return (
-    <Flexbox
-      align={'center'}
-      dir={'ltr'}
-      flex={'none'}
-      gap={4}
-      horizontal
-      style={{ color: theme.colorTextDescription, fontSize: 12, ...style }}
-      {...rest}
-    >
-      <span>Powered by</span>
-      {isCustomORG ? (
-        <span>{ORG_NAME}</span>
-      ) : (
-        <Link
-          className={styles.logoLink}
-          href={`https://lobehub.com?utm_source=${UTM_SOURCE}&utm_content=brand_watermark`}
-          target={'_blank'}
-        >
-          <LobeHub size={20} type={'text'} />
-        </Link>
-      )}
-    </Flexbox>
-  );
+  // 警告：请确保您理解此操作会彻底移除 LobeHub 品牌水印。
+  // ⚠️ 如果要恢复水印，请还原此文件。
+  return null; 
 });
 
 export default BrandWatermark;
