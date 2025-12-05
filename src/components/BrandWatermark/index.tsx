@@ -1,31 +1,20 @@
 'use client';
 
-import { LobeHub } from '@lobehub/ui/brand';
-import { createStyles } from 'antd-style';
-import Link from 'next/link';
 import { memo } from 'react';
-import { Flexbox, FlexboxProps } from 'react-layout-kit';
+import type { FlexboxProps } from 'react-layout-kit'; // 保留类型定义
 
-import { ORG_NAME } from '@/const/branding';
-import { UTM_SOURCE } from '@/const/url';
-import { isCustomORG } from '@/const/version';
+// ⚠️ 注意：所有与样式、链接、LobeHub 品牌相关的导入都已被删除。
+// 如果您想恢复功能，需要重新添加这些导入。
 
-const useStyles = createStyles(({ token, css }) => ({
-  logoLink: css`
-    line-height: 1;
-    color: inherit;
-
-    &:hover {
-      color: ${token.colorLink};
-    }
-  `,
-}));
-
-// 组件修改：直接返回 null，阻止渲染任何内容
-const BrandWatermark = memo<Omit<FlexboxProps, 'children'>>(({ style, ...rest }) => {
-  // 警告：请确保您理解此操作会彻底移除 LobeHub 品牌水印。
-  // ⚠️ 如果要恢复水印，请还原此文件。
-  return null; 
+/**
+ * @description 品牌水印组件。
+ * 作用是显示“Powered by”信息，此处被修改为返回 null，以禁用水印。
+ */
+// 💡 将组件参数重命名为以下划线开头（如 _style, _rest），可以避免 ESLint 的未使用变量错误。
+// 但是，最干净的做法是根本不解构它们。
+const BrandWatermark = memo<Omit<FlexboxProps, 'children'>>(() => {
+  
+  return null; // 阻止组件渲染任何内容
 });
 
 export default BrandWatermark;
