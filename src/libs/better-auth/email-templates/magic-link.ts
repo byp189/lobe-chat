@@ -26,9 +26,9 @@ export const getMagicLinkEmailTemplate = (params: { expiresInSeconds: number; ur
     
     <!-- Logo -->
     <div style="text-align: center; margin-bottom: 32px;">
-      <div style="display: inline-flex; align-items: center; justify-content: center; background-color: #ffffff; border-radius: 12px; padding: 8px 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+      <div style="display: inline-flex; align-items: center; justify-content: center; background-color: #FF9900; border-radius: 12px; padding: 8px 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
         <span style="font-size: 24px; line-height: 1; margin-right: 10px;">🤯</span>
-        <span style="font-size: 18px; font-weight: 700; color: #000000; letter-spacing: -0.5px;">ABEI AI</span>
+        <span style="font-size: 18px; font-weight: 700; color: #DDDDDD; letter-spacing: -0.5px;">ABEI AI</span>
       </div>
     </div>
 

@@ -484,7 +484,7 @@ export default {
     tabs: {
       installed: '已安装',
       mcp: 'MCP 插件',
-      old: 'LobeHub 插件',
+      old: 'ABEI AI 插件',
     },
     title: '插件商店',
   },
