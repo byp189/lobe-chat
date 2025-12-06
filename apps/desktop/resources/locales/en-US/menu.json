@@ -31,14 +31,14 @@
   },
   "help": {
     "about": "About",
-    "githubRepo": "GitHub Repository",
-    "reportIssue": "Report Issue",
+    "githubRepo": "",
+    "reportIssue": "",
     "title": "Help",
     "visitWebsite": "Visit Website"
   },
   "macOS": {
     "about": "About {{appName}}",
-    "devTools": "LobeHub Developer Tools",
+    "devTools": "AI Developer Tools",
     "hide": "Hide {{appName}}",
     "hideOthers": "Hide Others",
     "preferences": "Preferences...",

@@ -1,19 +1,12 @@
-import { LobeHub, LobeHubProps } from '@lobehub/ui/brand';
+import ABEI from '@/components/Branding/ABEI';
 import { memo } from 'react';
 
-import { isCustomBranding } from '@/const/version';
-
-import CustomLogo from './Custom';
-
-interface ProductLogoProps extends LobeHubProps {
+interface ProductLogoProps {
   height?: number;
   width?: number;
+  size?: number;
 }
 
 export const ProductLogo = memo<ProductLogoProps>((props) => {
-  if (isCustomBranding) {
-    return <CustomLogo {...props} />;
-  }
-
-  return <LobeHub {...props} />;
+  return <ABEI {...props} />;
 });

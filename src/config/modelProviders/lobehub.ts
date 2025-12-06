@@ -7,7 +7,7 @@ const LobeHub: ModelProviderCard = {
   enabled: true,
   id: 'lobehub',
   modelsUrl: 'https://lobehub.com/zh/docs/usage/subscription/model-pricing',
-  name: 'LobeHub',
+  name: 'AI',
   settings: {
     modelEditable: false,
     showAddNewModel: false,

@@ -19,8 +19,8 @@
     "submit": "提交"
   },
   "app": {
-    "description": "你的 AI 助手协作平台",
-    "name": "LobeHub"
+    "description": "ABEI AI专用",
+    "name": "ABEI AI"
   },
   "status": {
     "error": "错误",
