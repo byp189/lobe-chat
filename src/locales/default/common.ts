@@ -378,7 +378,7 @@ export default {
     newVersion: '有新版本可用：{{version}}',
   },
   userPanel: {
-    anonymousNickName: '匿名用户',
+    anonymousNickName: 'ABEI专用，不对外开放注册账号',
     billing: '账单管理',
     cloud: 'AI',
     community: 'ABEI专用',

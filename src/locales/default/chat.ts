@@ -139,8 +139,8 @@ export default {
   inactive: '不活跃',
 
   inbox: {
-    desc: '开启大脑集群，激发思维火花。你的智能助理，在这里与你交流一切',
-    title: '随便聊聊',
+    desc: 'ABEI AI感谢此项目开源原创作者lobehub',
+    title: '与ABEI AI 聊聊',
   },
 
   input: {

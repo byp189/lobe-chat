@@ -505,7 +505,7 @@ describe('GroupMessageFlattenProcessor', () => {
           parentId: 'msg_ekwWzxAKueHkd6',
           meta: {
             avatar: '🤯',
-            title: '随便聊聊',
+            title: '与ABEI AI 聊聊',
           },
           children: [
             {
