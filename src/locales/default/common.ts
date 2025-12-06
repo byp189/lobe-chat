@@ -6,8 +6,8 @@ export default {
       action: '立即AI',
       desc: 'AI',
       descOnMobile:
-        'AI,
-      title: 'AI,
+        'AI',
+      title: 'AI',
     },
   },
   appLoading: {
