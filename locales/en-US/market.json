@@ -2,6 +2,20 @@
   "addAgent": "Add Assistant",
   "addAgentAndConverse": "Add Assistant and Converse",
   "addAgentSuccess": "Successfully Added",
+  "guide": {
+    "func1": {
+      "desc1": "ABEI AI CLOSE IT",
+      "desc2": "ABEI AI CLOSE IT",
+      "tag": "Method 1",
+      "title": "ABEI AI CLOSE IT"
+    },
+    "func2": {
+      "button": "ABEI AI CLOSE IT",
+      "desc": "ABEI AI CLOSE IT",
+      "tag": "Method 2",
+      "title": "ABEI AI CLOSE IT"
+    }
+  },
   "search": {
     "placeholder": "Search assistant name, description or keywords..."
   },
@@ -12,7 +26,7 @@
   },
   "submitAgent": "Submit Assistant",
   "title": {
-    "allAgents": "All Assistants",
-    "recentSubmits": "Recent Submits"
+    "allAgents": "ABEI AI CLOSE IT",
+    "recentSubmits": "ABEI AI CLOSE IT"
   }
 }

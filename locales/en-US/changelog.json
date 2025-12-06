@@ -3,6 +3,16 @@
     "followOnX": "ONLY ABEI AI USE",
     "subscribeToUpdates": "ONLY ABEI AI USE",
     "versions": "ONLY ABEI AI USE"
-  }
-}
+  },
+  "addedWhileAway": "ONLY ABEI AI USE",
+  "allChangelog": "ONLY ABEI AI USE",
+  "description": "ONLY ABEI AI USE",
+  "pagination": {
+    "next": "ONLY ABEI AI USE",
+    "older": "ONLY ABEI AI USE"
+  },
+  "readDetails": "Read details",
+  "title": "Changelog",
+  "versionDetails": "ONLY ABEI AI USE",
+  "welcomeBack": "ONLY ABEI AI USE"
 }
