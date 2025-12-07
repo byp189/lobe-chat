@@ -4,7 +4,7 @@ export default {
     confirm: '授权使用',
     description: {
       and: '和',
-      prefix: '点击授权使用即视为同意',
+      prefix: 'ABEI AI 专用,非商业用途，符合',
       privacy: '隐私协议',
       terms: '服务条款',
     },
