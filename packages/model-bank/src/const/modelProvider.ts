@@ -29,7 +29,7 @@ export enum ModelProvider {
   InternLM = 'internlm',
   Jina = 'jina',
   LMStudio = 'lmstudio',
-  LobeHub = 'lobehub',
+  ABEI_AI = 'abei-ai',
   Minimax = 'minimax',
   Mistral = 'mistral',
   ModelScope = 'modelscope',

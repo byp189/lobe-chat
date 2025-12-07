@@ -1,7 +1,7 @@
 'use client';
 
 import { Button } from '@lobehub/ui';
-import { LobeHub } from '@lobehub/ui/brand';
+//import { LobeHub } from '@lobehub/ui/brand';
 import { Form, Input } from 'antd';
 import { createStyles } from 'antd-style';
 import { ChevronRight, Lock, Mail } from 'lucide-react';
@@ -131,7 +131,7 @@ export default function BetterAuthSignUpForm() {
       <div className={styles.container}>
         <div className={styles.card}>
           <Flexbox align="center" gap={8} justify="center">
-            <LobeHub size={48} />
+            <span style={{fontSize: 36, fontWeight: 'bold'}}>ABEI AI</span>
           </Flexbox>
 
           <h1 className={styles.title}>{t('betterAuth.signup.title')}</h1>
