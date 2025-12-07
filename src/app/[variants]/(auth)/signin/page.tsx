@@ -1,7 +1,7 @@
 'use client';
 
 import { ActionIcon, Button } from '@lobehub/ui';
-//import { LobeHub } from '@lobehub/ui/brand';
+import { LobeHub } from '@lobehub/ui/brand';
 import { Form, Input, type InputRef, Skeleton } from 'antd';
 import { createStyles, useTheme } from 'antd-style';
 import { ChevronLeft, ChevronRight, Lock, Mail } from 'lucide-react';
@@ -374,7 +374,7 @@ export default function SignInPage() {
       <div className={styles.container}>
         <div className={styles.card}>
           <Flexbox align="center" gap={8} justify="center">
-            <span style={{fontSize: 36, fontWeight: 'bold'}}>ABEI AI</span>
+            <LobeHub size={48} />
           </Flexbox>
 
           <h1 className={styles.title}>{t('betterAuth.signin.emailStep.title')}</h1>

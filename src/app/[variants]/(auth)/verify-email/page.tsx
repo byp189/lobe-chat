@@ -1,7 +1,7 @@
 'use client';
 
 import { Button } from '@lobehub/ui';
-//import { LobeHub } from '@lobehub/ui/brand';
+import { LobeHub } from '@lobehub/ui/brand';
 import { createStyles, useTheme } from 'antd-style';
 import { ArrowLeft, Mail, RefreshCw } from 'lucide-react';
 import Link from 'next/link';
@@ -124,7 +124,7 @@ export default function VerifyEmailPage() {
   return (
     <Center style={{ minHeight: '100vh' }}>
       <Flexbox align="center" className={styles.container} gap={24}>
-        <span style={{fontSize: 36, fontWeight: 'bold'}}>ABEI AI</span>
+        <LobeHub size={56} />
 
         <h1 className={styles.title}>{t('betterAuth.verifyEmail.title')}</h1>
 
