@@ -4,7 +4,7 @@
     "confirm": "授权使用",
     "description": {
       "and": "和",
-      "prefix": "ABEI AI 专用,非商业用途，符合",
+      "prefix": "ABEI AI 专用,非商业用途,符合 {{appName}}",
       "privacy": "隐私协议",
       "terms": "服务条款"
     },

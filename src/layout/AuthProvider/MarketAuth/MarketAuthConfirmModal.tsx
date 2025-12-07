@@ -5,6 +5,7 @@ import { createStyles } from 'antd-style';
 import { ArrowRight, ShieldCheck } from 'lucide-react';
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
+import { BRANDING_NAME } from '@/const/branding'; 
 
 const useStyles = createStyles(({ css, token }) => ({
   content: css`
@@ -113,6 +114,7 @@ const MarketAuthConfirmModal = memo<MarketAuthConfirmModalProps>(
   ({ open, onConfirm, onCancel }) => {
     const { t } = useTranslation('marketAuth');
     const { styles } = useStyles();
+    const agreementPrefix = t('authorize.description.prefix', { appName: BRANDING_NAME });
 
     return (
       <Modal
@@ -138,7 +140,7 @@ const MarketAuthConfirmModal = memo<MarketAuthConfirmModalProps>(
         <div className={styles.header}>
           <div className={styles.title}>{t('authorize.title')}</div>
           <div className={styles.description}>
-            {t('authorize.description.prefix')} <span className="highlight">LobeHub</span>{' '}
+            {agreementPrefix}{' '}
             <a href="https://ai.2536629.xyz" rel="noopener noreferrer" target="_blank">
               {t('authorize.description.terms')}
             </a>{' '}
