@@ -139,7 +139,7 @@ export default {
   inactive: '不活跃',
 
   inbox: {
-    desc: 'ABEI AI感谢此项目开源原创作者lobehub',
+    desc: 'ABEI AI专用，非商业用途',
     title: '与ABEI AI 聊聊',
   },
 
