@@ -26,6 +26,7 @@ export const CodeInterpreterManifest: BuiltinToolManifest = {
       },
     },
   ],
+  author: 'OFFICIAL',
   identifier: CodeInterpreterIdentifier,
   meta: {
     avatar:
