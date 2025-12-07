@@ -2,10 +2,10 @@ export default {
   builtins: {
     'lobe-knowledge-base': {
       apiName: {
-        readKnowledge: '读取知识库内容',
-        searchKnowledgeBase: '搜索知识库',
+        readKnowledge: '读取ABEI AI专用知识库内容',
+        searchKnowledgeBase: '搜索ABEI AI专用知识库',
       },
-      title: '知识库',
+      title: 'ABEI AI专用知识库',
     },
     'lobe-local-system': {
       apiName: {
@@ -206,9 +206,9 @@ export default {
         label: '标识符',
         pattenErrorMessage: '只能输入英文字符、数字 、- 和_ 这两个符号',
       },
-      lobe: '{{appName}} 插件',
+      lobe: 'ABEI AI 插件',
       manifest: {
-        desc: '{{appName}}将会通过该链接安装插件',
+        desc: 'ABEI AI将会通过该链接安装插件',
         label: '插件描述文件 (Manifest) URL',
         preview: '预览 Manifest',
         refresh: '刷新',
@@ -253,7 +253,7 @@ export default {
       edit: '编辑自定义插件',
     },
     type: {
-      lobe: '{{appName}} 插件',
+      lobe: 'ABEI AI 插件',
       openai: 'OpenAI 插件',
     },
     update: '更新',
@@ -385,11 +385,11 @@ export default {
       version: '版本',
     },
     official: {
-      badge: 'LobeHub 官方插件',
-      description: '此插件由 LobeHub 官方开发和维护，经过严格的安全审核，可放心使用。',
+      badge: '本页面插件由ABEI AI专用，非商业用途',
+      description: '本页面插件由ABEI AI专用，非商业用途',
       loadingMessage: '正在获取插件详情...',
       loadingTitle: '加载中',
-      title: '安装官方插件',
+      title: '安装ABEI AI专用插件',
     },
     title: '安装 MCP 插件',
     warning: '⚠️ 请确认您信任此插件的来源，恶意插件可能会危害您的系统安全。',
