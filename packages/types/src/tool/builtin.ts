@@ -66,7 +66,7 @@ export const LobeChatPluginApiSchema = z.object({
 
 export interface BuiltinToolManifest {
   api: LobeChatPluginApi[];
-  author?: string;
+
   /**
    * Tool-level default human intervention policy
    * This policy applies to all APIs that don't specify their own policy
@@ -94,7 +94,6 @@ export interface BuiltinToolManifest {
 
 export const BuiltinToolManifestSchema = z.object({
   api: z.array(LobeChatPluginApiSchema),
-  author: z.string().optional(),
   humanIntervention: HumanInterventionPolicySchema.optional(),
   identifier: z.string(),
   meta: MetaSchema,
